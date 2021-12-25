@@ -1,11 +1,13 @@
 import React from 'react'
+import Home from './pages/Home'
 
-const App = () => {
+function App() {
   return (
-    <div>
-      Sweet shopify store
+    <div className="App">
+      <Home />
     </div>
   )
 }
+
 
 export default App
