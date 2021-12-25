@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import ShopProvider from './context/shopContext';
+import App from './components/App';
+import { ChakraProvider } from "@chakra-ui/react"
+
+import ShopProvider from './context/shopContext'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ChakraProvider>
     <ShopProvider>
-    <App />
+      <App />
     </ShopProvider>
-  </React.StrictMode>,
+  </ChakraProvider>,
   document.getElementById('root')
+
 );
 
 
