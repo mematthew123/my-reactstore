@@ -61,6 +61,7 @@ class ShopProvider extends Component {
   removeLineItem = async (lineItemIdsToRemove) => {
     const checkoutId = this.state.checkout.id
 
+    // deepcode ignore PromiseNotCaughtGeneral: <please specify a reason of ignoring this>
     client.checkout.removeLineItems(checkoutId, lineItemIdsToRemove)
       .then(checkout => this.setState({ checkout }))
   }
