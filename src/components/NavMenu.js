@@ -29,13 +29,12 @@ const NavMenu = () => {
             <DrawerHeader>Menu</DrawerHeader>
             <DrawerBody>
               <VStack p="2rem">
-                <Link to="/">About Us</Link>
+                <Link to="/">Connect</Link>
                 <Link to="/">Learn More</Link>
                 <Link to="/">Sustainability</Link>
               </VStack>
             </DrawerBody>
             <DrawerFooter textAlign="center">
-              <Text w="100%">© Copyright www.workingwithshopify.com</Text>
             </DrawerFooter>
           </DrawerContent>
         </DrawerOverlay>
